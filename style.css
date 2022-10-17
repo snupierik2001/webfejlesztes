@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    color: white;
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), rgba(9, 10, 15, 1));
+    cursor: default;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: orange;
+}
+
+.rock-title {
+    color: gray;
+}
+
+.paper-title {
+    color: whitesmoke;
+}
+
+.scissors-title {
+    color: crimson;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 5rem;
+    transition: 100ms;
+}
+
+.selection:hover {
+    transform: scale(1.5);
+}
+
+.results {
+    margin-top: 4rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.member {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.result-score {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.result-selection {
+    font-size: 2rem;
+    opacity: .3;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 2.5rem;
+}
+
+.game-over {
+    display: grid;
+    justify-items: center;
+}
+
+#restart {
+    display: none;
+    border: 2px solid yellow;
+    border-radius: 2rem;
+    background: none;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 8rem;
+    font-size: 1.5rem;
+}
+
+#player-win {
+    display: none;
+    margin: 2rem;
+    text-align: center;
+    color: greenyellow;
+}
+
+#computer-win {
+    display: none;
+    margin: 2rem;
+    text-align: center;
+    color: red;
+}

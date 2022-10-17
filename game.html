@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+
+    <!-- TITLE -->
+    <h1 class="title">
+        THE <span class="rock-title">ROCK</span> <span class="paper-title">PAPER</span> <span class="scissors-title">SCISSORS</span>  GAME
+    </h1>
+
+    <!-- SELECTION LIST -->
+    <div class="selections">
+        <button id="sel-button-rock" class="selection" data-selection="rock">🪨</button>
+        <button id="sel-button-paper" class="selection" data-selection="paper">📜</button>
+        <button id="sel-button-scissors" class="selection" data-selection="scissors">✂️</button>
+    </div>
+
+    <!-- GAME OVER -->
+    <div class="game-over">
+        <h1 id="player-win">You Won!</h1>
+        <h1 id="computer-win">You Lost!</h1>
+        <button id="restart">Restart</button>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results">
+        <div class="member">
+            Player:
+            <span class="result-score" data-player-score>0</span>
+        </div>
+        <div class="member" data-final-column>
+            Computer:
+            <span class="result-score" data-computer-score>0</span>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="app.js"></script>
+</body>
+</html>
